@@ -32,6 +32,24 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Better server than webbrick
+gem "thin"
+
+# Easily Add Bootstrap themes and elements
+gem "starter_generators"
+
+# enable prettier rails console printing
+gem "awesome_print"
+
+# annotate models with or schema
+gem "annotate"
+
+
+group :development do
+  gem "quiet_assets" # quiet those assets down
+end
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

@@ -1,0 +1,19 @@
+<h1>CatMemeMe!</h1>
+
+<center><p>Upload an Image [form field]</p></center>
+
+<center><p>CatMeme Me! [button]</p></center>
+
+<div class = "imgholder">
+
+  <%= image_tag @catify[0].imagefile, class: "cat-img" %>
+
+  <img class="uploaded-img" src = "http://in1.ccio.co/01/75/5/ed9d6894f861a814588941e0b3023175.jpg?iw=300">
+
+</div><!--imgholder-->
+
+<center><%= button_to "Try Another Cat!", page_home_path, :class => "btn btn-primary", :method => :get %></center>
+
+<center><p>Share [not working]</p></center>
+
+

@@ -1,6 +1,7 @@
 class Cat < ActiveRecord::Base
 end
 
+
 # == Schema Information
 #
 # Table name: cats

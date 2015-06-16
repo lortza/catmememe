@@ -1,19 +1,27 @@
-<h1>CatMemeMe!</h1>
+<div class="row">
+  <h1>CatMemeMe!</h1>
 
-<center><p>Upload an Image [form field]</p></center>
+  <center><p>Upload an Image [form field]</p></center>
 
-<center><p>CatMeme Me! [button]</p></center>
+  <center><p>CatMeme Me! [button]</p></center>
 
-<div class = "imgholder">
+</div><!--row-->
 
-  <%= image_tag @catify[0].imagefile, class: "cat-img" %>
+<div class="row">
+  <div class = "imgholder">
 
-  <img class="uploaded-img" src = "http://dickraman.com/wp-content/uploads/2014/01/Kylie-Jenner-Selfie-Swag-Twitter-Winners-44.jpeg">
+    <%= image_tag @catify[0].imagefile, class: "cat-img" %>
 
-</div><!--imgholder-->
+    <img class="uploaded-img" src = "http://dickraman.com/wp-content/uploads/2014/01/Kylie-Jenner-Selfie-Swag-Twitter-Winners-44.jpeg">
 
-<center><%= button_to "Try Another Cat!", page_home_path, :class => "btn btn-primary", :method => :get %></center>
+  </div><!--imgholder-->
+</div><!--row-->
 
-<center><p>Share [not working]</p></center>
+<div class="row">
+
+  <center><%= button_to "Try Another Cat!", page_home_path, :class => "btn btn-primary", :method => :get %></center>
+
+  <center><p>Share [not working]</p></center>
+</div><!--row-->
 
 

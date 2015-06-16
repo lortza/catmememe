@@ -9,7 +9,7 @@
 
 Cat.create(imagefile: 'bread.png')
 Cat.create(imagefile: 'ceiling.png')
-Cat.create(imagefile: 'cheezburgerx.png')
+Cat.create(imagefile: 'cheezburger.png')
 Cat.create(imagefile: 'dodge.png')
 Cat.create(imagefile: 'grumpy.png')
 Cat.create(imagefile: 'hipster.png')

@@ -12,7 +12,7 @@
 
     <%= image_tag @catify[0].imagefile, class: "cat-img" %>
 
-    <img class="uploaded-img" src = "http://dickraman.com/wp-content/uploads/2014/01/Kylie-Jenner-Selfie-Swag-Twitter-Winners-44.jpeg">
+    <img class="uploaded-img" src = "http://www.hawtcelebs.com/wp-content/uploads/2015/05/http-forum.phun.org-showthread.php-t-1482055-s-274379d94a598c3565561644c334147a_2.jpg">
 
   </div><!--imgholder-->
 </div><!--row-->
@@ -23,5 +23,11 @@
 
   <center><p>Share [not working]</p></center>
 </div><!--row-->
+
+<script>
+  $(function() {
+    $( ".cat-img" ).draggable({ containment: ".uploaded-img" });
+  });
+</script>
 
 

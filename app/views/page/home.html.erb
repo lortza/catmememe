@@ -10,12 +10,16 @@
 <div class="row">
   <div class = "imgholder">
 
-    <%= image_tag @catify[0].imagefile, class: "cat-img" %>
+    <div class="cat-img-draggable">
+        <%= image_tag @catify[0].imagefile, class: "cat-img-resizable" %>
+    </div>
 
     <img class="uploaded-img" src = "http://www.hawtcelebs.com/wp-content/uploads/2015/05/http-forum.phun.org-showthread.php-t-1482055-s-274379d94a598c3565561644c334147a_2.jpg">
 
   </div><!--imgholder-->
 </div><!--row-->
+
+<br><br>
 
 <div class="row">
 
@@ -24,10 +28,9 @@
   <center><p>Share [not working]</p></center>
 </div><!--row-->
 
-<script>
-  $(function() {
-    $( ".cat-img" ).draggable({ containment: ".uploaded-img" });
+<script type="text/javascript">
+  $(document).ready(function() {
+    $( ".cat-img-draggable" ).draggable({ containment: ".uploaded-img" });
+    $( ".cat-img-resizable" ).resizable();
   });
 </script>
-
-

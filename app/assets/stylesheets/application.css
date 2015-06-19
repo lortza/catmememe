@@ -42,10 +42,10 @@ h1 {
   margin-bottom: 20px;
 }
 
-.cat-img {
+.cat-img-draggable {
   position:relative;
-  height: 300px;
-  max-width: 300px;
+  max-height: 150px;
+  max-width: 150px;
   left: 0px;
   top: 100px;
   z-index: 1;

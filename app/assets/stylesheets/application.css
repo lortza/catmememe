@@ -14,13 +14,12 @@
  *= require_self
  */
 
-.indexcat {
-width: 200px;
-}
+/* sitewide styles */
 
 body {
   color: black;
   background-color: #f3f3f3;
+  background-image: url("cat-bg.png");
 }
 
 h1, p {
@@ -33,13 +32,42 @@ h1 {
   margin-bottom: 5px;
 }
 
+nav {
+  display: none;
+}
+
+.row {
+  clear: both;
+}
+
+
+/* meme page styles */
+
+.introtxt {
+  clear: both;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.catframe {
+  width: 900px;
+  height: 700px;
+  margin: 0 auto;
+  position: absolute;
+  background-image: url("catframe.png");
+  top: 0px;
+  z-index: -1;
+  margin-bottom: 50px;
+
+}
 
 .imgholder {
   width: 300px;
-  height: 300px;
+  height: 500px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 20px;
+  top: 200px;
 }
 
 .cat-img-draggable {
@@ -50,6 +78,14 @@ h1 {
   top: 100px;
   z-index: 1;
  /* border: 1px solid pink; */
+}
+
+.cat-img-resizable {
+  position:relative;
+  max-height: 300px;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
 }
 
 .uploaded-img {
@@ -68,3 +104,22 @@ h1 {
   border-radius: 10px;
   display: inline;
 }
+
+/* cat index page */
+.indexcat {
+width: 150px;
+margin-bottom: 20px;
+}
+
+
+/* cat form page */
+.editwrapper {
+width: 33%;
+margin: 0 auto;
+}
+
+.editwrapper img {
+  width: 100%;
+  max-width: 200px;
+}
+

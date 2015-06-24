@@ -1,29 +1,31 @@
 <div class="row">
-  <h1>CatMemeMe!</h1>
-
-  <center><p>Upload an Image [form field]</p></center>
-
-  <center><p>CatMeme Me! [button]</p></center>
-
+  <div class="introtxt">
+    <h1>CatMemeMe!</h1>
+    <center><p>Upload an Image [form field]</p></center>
+    <center><%= button_to "CatMeme Me!", page_home_path, :class => "btn btn-primary", :method => :get %></center>
+  </div><!--introtxt-->
 </div><!--row-->
 
 <div class="row">
-  <div class = "imgholder">
 
-    <div class="cat-img-draggable">
-        <%= image_tag @catify[0].imagefile, class: "cat-img-resizable" %>
-    </div>
+  <div class="catframe">
+    <div class="imgholder">
 
-    <img class="uploaded-img" src = "http://www.hawtcelebs.com/wp-content/uploads/2015/05/http-forum.phun.org-showthread.php-t-1482055-s-274379d94a598c3565561644c334147a_2.jpg">
+      <div class="cat-img-draggable">
+          <%= image_tag @catify[0].imagefile, class: "cat-img-resizable" %>
+      </div>
 
-  </div><!--imgholder-->
+      <img class="uploaded-img" src="http://www.hawtcelebs.com/wp-content/uploads/2015/05/http-forum.phun.org-showthread.php-t-1482055-s-274379d94a598c3565561644c334147a_2.jpg">
+
+    </div><!--imgholder-->
+  </div><!--catframe-->
 </div><!--row-->
 
 <br><br>
 
 <div class="row">
 
-  <center><%= button_to "Try Another Cat!", page_home_path, :class => "btn btn-primary", :method => :get %></center>
+
 
   <center><p>Share [not working]</p></center>
 </div><!--row-->
